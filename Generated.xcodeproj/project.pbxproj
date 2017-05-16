@@ -2424,7 +2424,6 @@
 		OBJ_125 /* utf-8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "utf-8.h"; sourceTree = "<group>"; };
 		OBJ_126 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/robert/Desktop/KituraProjects/Generated/Generated.xcodeproj/GeneratedModuleMap/paho/module.modulemap; sourceTree = "<group>"; };
 		OBJ_128 /* MemoryPlugin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPlugin.cpp; sourceTree = "<group>"; };
-		OBJ_13 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = SOURCE_ROOT; };
 		OBJ_130 /* MemoryPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryPlugin.h; sourceTree = "<group>"; };
 		OBJ_131 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/robert/Desktop/KituraProjects/Generated/Generated.xcodeproj/GeneratedModuleMap/memplugin/module.modulemap; sourceTree = "<group>"; };
 		OBJ_134 /* KituraRequest+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KituraRequest+Error.swift"; sourceTree = "<group>"; };
@@ -3871,7 +3870,6 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_12 /* Tests */,
-				OBJ_13 /* public */,
 				OBJ_14 /* Dependencies */,
 				OBJ_313 /* Products */,
 			);

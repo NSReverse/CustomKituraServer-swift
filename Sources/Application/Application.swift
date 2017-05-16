@@ -18,9 +18,12 @@ public func initialize() throws {
     print("Server running from: " + location)
     
     router.get("/") { (request, response, next) in
-        try response.send(fileName: getFile(fileName: "dashboard.html"))
-        
-        try print(processFile(path: getFile(fileName: "dashboard.html")))
+        do {
+            try response.send(fileName: getFile(fileName: "index.html"))
+        }
+        catch {
+            response.send("Error: index.html doesn't exist.")
+        }
     }
     
     router.get("/:name") { (request, response, next) in
@@ -91,28 +94,4 @@ public func getFile(fileName: String) -> String {
     
     print("Reference to \(publicDirectory)\(fileName) requested.")
     return publicDirectory + fileName
-}
-
-// Interpreter Below...
-
-public func processFile(path: String) throws -> String {
-    let dir = URL(fileURLWithPath: path)
-    var contents = "";
-    
-    try contents = interpretFile(contents: String(contentsOf: dir))
-    
-    return contents
-}
-
-public func interpretFile(contents: String) throws -> String {
-    return contents.replacingOccurrences(of: "[server invokeSelector:getMainContainer()]", with: getMainContainer())
-                    .replacingOccurrences(of: "[server invokeSelector:getClassContainer()]", with: getClassContainer())
-}
-
-public func getMainContainer() -> String {
-    return ""
-}
-
-public func getClassContainer() -> String {
-    return ""
 }

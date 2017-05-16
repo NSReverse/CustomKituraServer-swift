@@ -8,12 +8,6 @@
       "version": "0.2.3"
     },
     {
-      "package": "CSQLite",
-      "reason": null,
-      "repositoryURL": "https://github.com/stephencelis/CSQLite.git",
-      "version": "0.0.2"
-    },
-    {
       "package": "CloudConfiguration",
       "reason": null,
       "repositoryURL": "https://github.com/IBM-Swift/CloudConfiguration.git",
@@ -84,12 +78,6 @@
       "reason": null,
       "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
       "version": "1.7.0"
-    },
-    {
-      "package": "SQLite",
-      "reason": null,
-      "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
-      "version": "0.11.3"
     },
     {
       "package": "SSLService",
